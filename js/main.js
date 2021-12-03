@@ -16,25 +16,25 @@ function tinhKetQua(){
         vay = document.getElementById("vay").value=""
         time = document.getElementById("time").value=""
         document.getElementById("no").style.display = "block";
-    document.getElementById("no").textContent="Lưu ý: Tất cả giá trị là một số dương. Mời bạn nhập lại"
+    document.getElementById("no").textContent="Lưu ý: Tất cả giá trị là một số dương. Mời bạn nhập lại."
     }else{
     var result1 = income*0.6
     var result2 = vay*(1+lai/100)/time
     var alertTag = document.getElementById("result")
     alertTag.innerHTML = ""
-    var kq1 = document.createElement("h1")
+    var kq1 = document.createElement("h4")
     kq1.textContent = "Số tiền có thể trả trong 1 tháng: "+result1.toFixed(0)+" VNĐ"
-    var kq2 = document.createElement("h1")
+    var kq2 = document.createElement("h4")
     kq2.textContent = "Số tiền phải trả trong 1 tháng: "+result2.toFixed(0)+" VNĐ"
     alertTag.appendChild(kq1)
     alertTag.appendChild(kq2)
     if(result1 <= result2){
     var check=document.getElementById("no")
-    check.textContent = "Rất tiếc. Bạn không đủ điều kiện vay"
+    check.textContent = "Rất tiếc. Bạn không đủ điều kiện vay."
     document.getElementById("no").style.display = "block";
     }else{
     var check=document.getElementById("yes")
-    check.textContent = "Xin chúc mừng. Bạn đã đủ điều kiện vay"
+    check.textContent = "Xin chúc mừng. Bạn đã đủ điều kiện vay."
     document.getElementById("yes").style.display = "block";
         
     }
