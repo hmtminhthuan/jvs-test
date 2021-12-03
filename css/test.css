@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  -webkit-box-shadow: 0 -5px 25px gray;
+          box-shadow: 0 -5px 25px gray;
+}
+
+#result {
+  display: none;
+}
+
+#yes {
+  display: none;
+}
+
+#no {
+  display: none;
+}
+/*# sourceMappingURL=test.css.map */
